@@ -1,0 +1,56 @@
+{
+		"name": "cybercity-electron",
+		"version": "1.0.0",
+			"description": "Electron shell for Cybercity Next.js app",
+			"author": "kasinadhsarma <kasinadhsarma@gmail.com>",
+			"homepage": "https://github.com/kasinadhsarma/cybercity",
+		"main": "src/main.ts",
+	"scripts": {
+		"start": "ts-node src/main.ts",
+		"dist:linux": "electron-builder --linux"
+	},
+		"dependencies": {
+		},
+		"devDependencies": {
+			"electron": "^38.1.2",
+			"@types/electron": "^1.4.38",
+			"electron-builder": "^26.0.12",
+			"ts-node": "^10.9.1",
+			"typescript": "^5.0.0"
+		},
+	"build": {
+		"appId": "com.cybercity.app",
+		"files": [
+			"src/**/*",
+			"../app/**/*",
+			"../components/**/*",
+			"../lib/**/*",
+			"../hooks/**/*",
+			"../public/**/*",
+			"../package.json"
+		],
+		"directories": {
+			"buildResources": "build"
+		},
+				"linux": {
+					"target": [
+						"AppImage",
+						"deb"
+					],
+					"category": "Utility",
+					"maintainer": "kasinadhsarma <kasinadhsarma@gmail.com>"
+				},
+				"win": {
+					"target": [
+						"nsis",
+						"zip"
+					]
+				},
+				"mac": {
+					"target": [
+						"dmg",
+						"zip"
+					]
+				}
+	}
+}

@@ -1,60 +1,36 @@
-## Title: Cyber City -  cyber security  in one base
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-⬇️ **Download**
+## Getting Started
 
-| Distribution | Format | Source |
-| ------------ | ------ | ------ |
-| Ubuntu       | deb    | [Download PenetrationAppv1.0.deb](https://github.com/Exploit0xfffff/PenetrationApp/releases/download/v1.0.0/PenetrationAppv1.0.deb) |
-| becoming webbased project !......|
-
-
-### Ubuntu Installation
+First, run the development server:
 
 ```bash
-sudo dpkg -i PenetrationAppv1.0.deb
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### Uninstallation
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-sudo apt remove penetration-app
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Developers
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-before installation all should install the node -npm 
+## Learn More
 
-```bash
-git clone https://github.com/Exploit0xfffff/CyberCity
-cd experiment/cybercity
-npm start
-```
-### Future Updates
+To learn more about Next.js, take a look at the following resources:
 
-- **Version 2.0 Beta (Coming Soon)**: We are planning significant updates that include the development of applications like Benmap, cydra, and Hellosploit. Additionally, BurpSuite will remain an essential tool within the toolkit.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- **Version 2.5.0 Beetroot**: This update will bring significant UI improvements and further advancements in development.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Development
-### v1.0 Development 
-| Folder            | Description |
-| ----------------- | ----------- |
-| src               | Contains the main source code |
-| img               | Contains images used in the project |
-| target/release    | Executable file for v2.0 (Beta) release |
+## Deploy on Vercel
 
-### Release History
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- **v1.0 Alpha (Completed)**: Initial release with basic functionality and toolset.
-
-- **v2.0 Beta (Coming Soon)**: Focus on the development of new applications while maintaining existing tools like BurpSuite.
-
-![Screenshot from 2023-12-18 13-42-40](https://github.com/Exploit0xfffff/CyberCity/assets/81065703/a46cef74-7fbd-4385-a993-77036d820f21)
-
-
-it is coming a major things happend in this 
-- **v2.5.0 Beetroot**: Major UI improvements and further advancements in development.
-
-We strive to provide a modern and user-friendly experience with regular updates based on user feedback and the ever-changing cybersecurity landscape. We are excited to have you as part of our community and look forward to delivering an exceptional cybersecurity toolkit.
-
-Visit our [GitHub repository](https://github.com/Exploit0xfffff/PenetrationApp/discussions/15) for the latest updates and version releases. Feel free to contribute, suggest new features, or report any issues you encounter. Let's work together to make the Penetration App the go-to tool for all your cybersecurity needs!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
