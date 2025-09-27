@@ -59,12 +59,6 @@ export function Dashboard({ selectedCategory, onCategorySelect }: DashboardProps
     return (
       <div className="p-6">
         <div className="mb-6">
-          <button
-            onClick={() => onCategorySelect(null)}
-            className="text-primary hover:text-primary/80 mb-4 flex items-center space-x-2 transition-colors"
-          >
-            <span>← Back to Dashboard</span>
-          </button>
           <div className="flex items-center justify-between mb-4">
             <div>
               <h1 className="text-3xl font-bold mb-2">{categoryInfo?.name}</h1>
@@ -74,6 +68,7 @@ export function Dashboard({ selectedCategory, onCategorySelect }: DashboardProps
             {/* Category Filters and Sorting */}
             <div className="flex items-center space-x-4">
               <select
+                aria-label="Filter tools"
                 value={filterBy}
                 onChange={(e) => setFilterBy(e.target.value as "all" | "installed" | "not-installed")}
                 className="bg-background border border-border rounded px-3 py-2 text-sm"
@@ -84,6 +79,7 @@ export function Dashboard({ selectedCategory, onCategorySelect }: DashboardProps
               </select>
 
               <select
+                aria-label="Sort tools"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as "name" | "rating" | "lastUsed")}
                 className="bg-background border border-border rounded px-3 py-2 text-sm"
