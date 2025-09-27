@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "desktop": "npm run build && cd electron && npm run start",
+    "desktop:dev": "concurrently \"next dev\" \"cd electron && npm run watch\" \"wait-on http://localhost:3000 && cd electron && npm run start\"",
+    "package": "npm run build && cd electron && npm run dist",
+    "package:all": "npm run build && cd electron && npm run dist:linux && npm run dist:mac && npm run dist:win"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -30,6 +34,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "tailwindcss": "^4",
